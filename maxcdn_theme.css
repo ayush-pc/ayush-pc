@@ -8,7 +8,6 @@
   {%- assign fonts_type_body_style = settings.type_body.style -%}
   {%- assign fonts_type_body_weight = settings.type_body.weight | times: 1 -%}
   {{ settings.type_body | font_face: font_display: fonts_type_body_display }}
-
   {%- comment -%}Italic{%- endcomment -%}
 
   {%- assign fonts_type_body_style_italic = settings.type_body | font_modify: 'style', 'italic' | map: 'style' | default: 'italic' -%}
